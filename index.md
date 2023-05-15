@@ -2,7 +2,6 @@
 
 ### Hi there 👋
 
-<!--
 **dafebust/dafebust** is a ✨ _special_ ✨ repository.
 
 Here are some ideas to get you started:
@@ -15,7 +14,7 @@ Here are some ideas to get you started:
 
 *En este repositorio se podrán encontrar las actividades realizadas en el término 1-2023 de la carrera ingeniería computacional* :2.23.2.72:.
 
--->
+
 
 
 
