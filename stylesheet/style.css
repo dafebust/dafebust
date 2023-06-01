@@ -9,7 +9,21 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
+  }
 
+  body {
+    background-image: linear-gradient(
+      to top,
+      #121535,
+      #1b1a3f,
+      #251f49,
+      #2f2352,
+      #3a285c
+    );
+  }
+  
+  footer{
+    margin-top: 40px;
   }
   
   article {
@@ -119,4 +133,73 @@
   line-height: 2;
   color: var(--light-color);
   font-size: 18px;
+}
+
+.cards-container{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects {
+  margin-top: 50px;
+}
+.projects-title {
+  width: 100%;
+  text-align: center;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.cards-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.project-card {
+  margin-top: 30px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background-color: var(--blue-sky);
+  border: 2px solid var(--pink-punk);
+  position: relative;
+  box-shadow: 0px 0px 4px 4px var(--pink-strong);
+}
+.card-info {
+  text-align: center;
+  padding: 10px;
+}
+.card-title {
+  font-family: "Iceland", cursive;
+  font-size: 30px;
+  text-shadow: 0px 0px 25px var(--green);
+}
+.card-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid var(--blue-night);
+}
+.card-description {
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Share Tech Mono", monospace;
+}
+.card-tech {
+  font-family: "Iceland", cursive;
+  text-align: left;
+  font-size: 18px;
+  text-shadow: 0px 0px 20px var(--pink-punk);
+}
+.icon-tech {
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  justify-content: space-around;
+  text-shadow: 0px 0px 25px var(--green);
+}
+.card-icon:hover {
+  color: var(--green);
 }
