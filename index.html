@@ -20,8 +20,9 @@
             <a href="#home" class="logo"><img src="stylesheet/img/animals_bird_penguin_01/animals_bird_penguin_01.svg" alt></a>
 
             <nav class="navbar">
-                <a href="#about">about</a>
-                <a href="#gallery">gallery</a>
+                <a href="#about">About me</a>
+                <a href="#skill">Skills</a>
+                <a href="#contact">Contact</a>
             </nav>
 
             <div id="menu-btn" class="fas fa-bars"></div>
@@ -38,163 +39,54 @@
                 Don't waste your time, you're just where you need to be, hire me.
             </p>
         </div>
-
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>Escuela Superior Politécnica del Litoral</p>
-        <p>Bachelor of Science in Computer Science</p>
-        <p>2017-2023</p>
-    </section>
-
-    <section id="workexperience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>
-                <p>Housekeepig, Phoenix, AZ</p>
-                <p>03/2020-05/2020</p> 
-            </li>
-            
-            <li>
-               <p>Amazon Crew's Memeber, Phoenix, AZ</p>
-                <p>05/2020-07/2020</p> 
-            </li>
-            
-            <li>
-                <p>Freelancer at Workup</p>
-                <p>2023-now</p>
-            </li>
-        </ul>
-
-        
     </section>
 
     <section id="skill">
         <h2>Skills</h2>
-        <h3>Programming Languages</h3>
-        <table>
-            <thead>
-                <th>Lenguage</th>
-                <th>Lvl</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Python</td>
-                    <td>4 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>4 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>Javascript</td>
-                    <td>3 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>PHP</td>
-                    <td>3 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>Ruby</td>
-                    <td>2 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>Dart</td>
-                    <td>2 Estrellas</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h3>Dataframes</h3>
-        <table>
-            <thead>
-                <th>Dataframe</th>
-                <th>Lvl</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Angular</td>
-                    <td>2 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>React</td>
-                    <td>3 Estrellas</td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h3>Databases</h3>
-        <table>
-            <thead>
-                <th>Database</th>
-                <th>Lvl</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>MySQL</td>
-                    <td>4 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>PostgreSQL</td>
-                    <td>3 Estrellas</td>
-                </tr>
-                <tr>
-                    <td>MongoDB</td>
-                    <td>3 Estrellas</td>
-                </tr>
-            </tbody>
-        </table>
-
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <form id="formulario">
-            <label for="nombrescompletos">Nombres completos:</label> <input type="text" id="nombrescompletos" name="nombrescompletos" required="required" />
-            <label for="correoelectronico">Correo electrónico:</label> <input type="email" id="correoelectronico" name="correoelectronico" required="required" />
-                    <label>Género:</label>
-                    <input type="radio" id="femenino" name="genero" value="femenino">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" id="masculino" name="genero" value="masculino">
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" id="noresponder" name="genero" value="noresponder" checked="checked">
-                    <label for="noresponder">Prefiero no responder</label>    
-                
-                    <label for="sistemaoperativo">Motivo de contacto:</label>
-                    <select id="sistemaoperativo" name="sistemaoperativo">
-                        <option value="windows">Trabajo</option>
-                        <option value="linux">Sugerencia</option>
-                        <option value="macos">Otro</option>
-                    </select>
-                <label for="mensaje">Mensaje:</label> <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
-                <input type="checkbox" id="nosoyunrobot" value="nosoyunrobot"> <label for="nosoyunrobot">No soy un robot</label>
-                <button type="submit" name="enviar">Enviar</button> <button type="reset" name="reiniciar">Cancelar</button>
-            </form> 
-    </section>
+    <section id="projects container">
+        <h3 class="projects-title" id="projects">Projects</h3>
+        <div class="cards-container">
+            <div class="project-card">
 
-    <section>
-        <h2>Galeria</h2>
-        <article>
-            <figure>
-            <img src="/stylesheet/img/puppy.jpg" alt="puppy" width="250" height="250">
-            <figcaption>Image IA</figcaption>
-            </figure>
-            <h2>Puppy</h2>
-            <p>
-            Look at the puppy.
-            </p>
-        </article>
-    </section>
+                <img class="card-image" src="https://i.postimg.cc/02LFYyDF/Trailer.png" alt="Trailers web">
+                <div class="card-info">
+                    <h4 class="card-title">Trailers web</h4>
+                    <p class="card-description">This is a website where you can watch the Trailers of the best
+                        videogames, series and movies. What is your favorite?</p>
+                    <p class="card-tech">Technologies used in this project:</p>
+                    <div class="icon-tech">
+                        <i class="fab fa-html5 card-icon"></i>
+                        <i class="fab fa-css3-alt card-icon"></i>
+                        <i class="fab fa-js-square card-icon"></i>
+                        <i class="fab fa-git-alt card-icon"></i>
+                        <i class="fab fa-github-square card-icon"></i>
+                        <i class="fab fa-bootstrap card-icon"></i>
+                        <i class="fab fa-react card-icon"></i>
 
-    <section>
-        <h2>Video</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mzgFEAtawE0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </section>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://trailers-e06ca.web.app/" target="_blank">
+                            <button type="button" class="button">Website</button>
+                        </a>
+                        <a href="https://github.com/Tonnyk17/Player-firebase" target="_blank">
+                            <button type="button" class="button">Repositorie</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-    <section>
-        <h2>Mapa</h2>
-        <div id = 'map'>
+
         </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+    </section>
+
+    <section id="map">
+        <h2>Mapa</h2>
         <script>
             var map = L.map('map').
             setView([-2.1476895,-79.9667913],12);
@@ -206,6 +98,7 @@
             L.marker([-2.1476895,-79.9667913],{draggable: true}).addTo(map);
         </script>
     </section>
+
 </main>
 <footer>
     <p>Copyright &copy; 2023, Daniel Fernández SA</p>
