@@ -2,205 +2,226 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-* {
-    font-family: 'Press Start 2P', cursive;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-
-  body {
-    background-image: linear-gradient(
-      to top,
-      #121535,
-      #1b1a3f,
-      #251f49,
-      #2f2352,
-      #3a285c
-    );
-  }
+  * {
+      font-family: 'Press Start 2P', cursive;
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      text-decoration: none;
+      text-transform: capitalize;
+    }
   
-  footer{
-    margin-top: 40px;
-  }
+    body {
+      background-image: linear-gradient(
+        to top,
+        #121535,
+        #1b1a3f,
+        #251f49,
+        #2f2352,
+        #3a285c
+      );
+    }
+    
+    footer{
+      margin-top: 40px;
+    }
+    
+    article {
+      width: 300px;
+      border: 2px solid gray;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 5px;
+    }
+    
+    figure {
+      margin: 0 auto;
+    }
+    
+    img {
+      display: block;
+      width: 273px;
+      margin: 0 auto;
+      aspect-ratio: auto 500/250;
+    }
   
-  article {
-    width: 300px;
-    border: 2px solid gray;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-  }
+    #map { 
+      width: 100%;
+      height: 580px;
+      box-shadow: 5px 5px 5px #888;
+   }
   
-  figure {
+   section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
-  img {
-    display: block;
-    width: 273px;
-    margin: 0 auto;
-    aspect-ratio: auto 500/250;
+  
+  .header {
+    /* Sticky navbar */
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+  
+    background-color: var(--white);
+  
+    /* Shadow */
+     box-shadow: var(--box-shadow); 
+  
   }
-
-  #map { 
+  
+  .header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.1rem 2rem;
+  }
+  
+  .header .flex .logo img {
+    height: 5rem;
+  }
+  
+  .header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: var(--black);
+  }
+  
+  .header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+  }
+  
+  :root {
+    --white: rgb(124, 138, 218);
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgb(0 0 0 / 10%);
+  }
+  
+  .about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  
+  .about .image {
     width: 100%;
-    height: 580px;
-    box-shadow: 5px 5px 5px #888;
- }
-
- section {
-  padding: 3rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-
-.header {
-  /* Sticky navbar */
+  }
   
-  position: sticky;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000; 
+  .about .content {
+    width: 56%; 
+  }
+  
+  .about .content h2 {
+    font-size: 3rem;
+    color: var(--black);
+    padding-bottom: 1rem;
+    color:  rgb(124, 138, 218);
+  }
+  
+  /* RWD: Tamaño de fuentes adaptables */
+  .about .content p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 18px;
+    color:#e7d3df;
+  }
+  
+  .cards-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .projects {
+    margin-top: 50px;
+  }
+  .projects-title {
+    width: 100%;
+    text-align: center;
+    color: var(--green);
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .cards-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .project-card {
+    margin-top: 30px;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--blue-sky);
+    border: 2px solid var(--pink-punk);
+    position: relative;
+    box-shadow: 0px 0px 4px 4px var(--pink-strong);
+  }
+  .card-info {
+    text-align: center;
+    padding: 10px;
+  }
+  .card-title {
+    font-family: "Iceland", cursive;
+    font-size: 30px;
+    text-shadow: 0px 0px 25px var(--green);
+  }
+  .card-image {
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    border-bottom: 2px solid var(--blue-night);
+  }
+  .card-description {
+    text-align: justify;
+    font-size: 16px;
+    font-family: "Share Tech Mono", monospace;
+  }
+  .card-tech {
+    font-family: "Iceland", cursive;
+    text-align: left;
+    font-size: 18px;
+    text-shadow: 0px 0px 20px var(--pink-punk);
+  }
+  .icon-tech {
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    text-shadow: 0px 0px 25px var(--green);
+  }
+  .card-icon:hover {
+    color: var(--green);
+  }
+  
+  .marco-digital {
+    width: 500px;
+    height: 360px;
+    display: flex;
+    position: relative;
+  }
+  
+  .marco-digital img{
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
 
-  background-color: var(--white);
-
-  /* Shadow */
-   box-shadow: var(--box-shadow); 
-
-}
-
-.header .flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  padding: 1.1rem 2rem;
-}
-
-.header .flex .logo img {
-  height: 5rem;
-}
-
-.header .flex .navbar a {
-  margin-left: 2rem;
-  font-size: 1.2rem;
-  color: var(--black);
-}
-
-.header .flex .navbar a:hover {
-  text-decoration: underline;
-  color: var(--main-color);
-}
-
-:root {
-  --main-color: #4a4642;
-  --black: #333;
-  --white: rgb(124, 138, 218);
-  --light-color: #666;
-  --border: .2rem solid var(--black);
-  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-}
-
-.about{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between; 
-}
-
-.about .image {
-  width: 40%;
-}
-
-.about .content {
-  width: 55%; 
-}
-
-.about .content h2 {
-  font-size: 3rem;
-  color: var(--black);
-  padding-bottom: 1rem;
-}
-
-/* RWD: Tamaño de fuentes adaptables */
-.about .content p {
-  padding: 1rem 0;
-  line-height: 2;
-  color: var(--light-color);
-  font-size: 18px;
-}
-
-.cards-container{
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.projects {
-  margin-top: 50px;
-}
-.projects-title {
-  width: 100%;
-  text-align: center;
-  color: var(--green);
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: 30px;
-}
-.cards-container {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-}
-.project-card {
-  margin-top: 30px;
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  background-color: var(--blue-sky);
-  border: 2px solid var(--pink-punk);
-  position: relative;
-  box-shadow: 0px 0px 4px 4px var(--pink-strong);
-}
-.card-info {
-  text-align: center;
-  padding: 10px;
-}
-.card-title {
-  font-family: "Iceland", cursive;
-  font-size: 30px;
-  text-shadow: 0px 0px 25px var(--green);
-}
-.card-image {
-  border-radius: 10px;
-  width: 100%;
-  height: 180px;
-  border-bottom: 2px solid var(--blue-night);
-}
-.card-description {
-  text-align: justify;
-  font-size: 16px;
-  font-family: "Share Tech Mono", monospace;
-}
-.card-tech {
-  font-family: "Iceland", cursive;
-  text-align: left;
-  font-size: 18px;
-  text-shadow: 0px 0px 20px var(--pink-punk);
-}
-.icon-tech {
-  width: 100%;
-  display: flex;
-  font-size: 16px;
-  justify-content: space-around;
-  text-shadow: 0px 0px 25px var(--green);
-}
-.card-icon:hover {
-  color: var(--green);
-}
+  .marco-digital img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
