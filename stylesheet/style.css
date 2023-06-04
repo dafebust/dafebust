@@ -58,7 +58,9 @@
     margin: 0 auto;
   }
   
-  
+  #footer{
+    color: white;
+  }
   .header {
     /* Sticky navbar */
     
@@ -135,26 +137,16 @@
     color:#e7d3df;
   }
   
-  .cards-container{
-    grid-template-columns: repeat(3, 1fr);
-  }
   
   .projects {
     margin-top: 50px;
   }
-  .projects-title {
-    width: 100%;
-    text-align: center;
-    color: var(--green);
-    font-weight: bold;
-    font-size: 30px;
-    margin-top: 30px;
-  }
+
   .cards-container {
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
   }
   .project-card {
@@ -224,4 +216,109 @@
     width: 100px;
     opacity: 1;
     filter: contrast(120%);
+  }
+
+  .habilidades{
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de tamaño igual */
+    grid-gap: 50px;
+  }
+
+  .skills_contenedor{
+    width: 100%;
+    background-color: #ddd;
+    display: grid;
+    grid-gap: 10px;
+  }
+
+  .skill{
+      color: rgb(124, 138, 218);
+      padding-bottom: 1rem;
+      
+  }
+
+  .skills{
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .p90{
+    background-color: #04aa6d;
+    animation: fillp90 2s forwards;
+  }
+
+  @keyframes fillp90 {
+    0%{width: 0;}
+    100%{width: 90%;}
+  }
+  
+  .p80{
+    background-color: #04aa6d;
+    animation: fillp80 2s forwards;
+  }
+
+  @keyframes fillp80 {
+    0%{width: 0;}
+    100%{width: 80%;}
+  }
+
+  .p70{
+    background-color: #04aa6d;
+    animation: fillp70 2s forwards;
+  }
+
+  @keyframes fillp70 {
+    0%{width: 0;}
+    100%{width: 70%;}
+  }
+
+  .p60{
+    background-color: #04aa6d;
+    animation: fillp60 2s forwards;
+  }
+
+  @keyframes fillp60 {
+    0%{width: 0;}
+    100%{width: 60%;}
+  }
+
+  .p50{
+    background-color: #04aa6d;
+    animation: fillp50 2s forwards;
+  }
+
+  @keyframes fillp50 {
+    0%{width: 0;}
+    100%{width: 50%;}
+  }
+
+  .badges{
+    display: grid;
+    color: rgb(251, 249, 249);
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de tamaño igual */
+    grid-gap: 2rem;
+  }
+
+  .buttons {
+    text-align: center;
+    margin-top: 5px;
+  }
+  .button {
+    border: 1px solid white;
+    color: var(--green);
+    background-color: transparent;
+    margin: 20px;
+    font-size: 16px;
+    box-shadow: 0px 0px 3px 3px var(--green);
+  }
+  .button:hover {
+    background-color: var(--pink-strong);
+  }
+  footer {
+    text-align: center;
+    margin-top: 20px;
   }
